@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 14px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .nav ul {
+            display: flex;
+            height: 100%;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .nav ul li {
+            width: 20%;
+        }
+
+        .nav ul li a {
+            color: #fff;
+        }
+
+        .item1 {
+            background-color: #C37165;
+        }
+
+        .item2 {
+            background-color: #E37C34;
+        }
+
+        .item3 {
+            background-color: #EFC9B0;
+        }
+
+        .item4 {
+            background-color: #3DB4D0;
+        }
+
+        .item5 {
+            background-color: #EB7995;
+        }
+
+        .bg {
+            max-height: 700px;
+            width: 100%;
+        }
+
+        .bg img {
+            max-height: 700px;
+            width: 100%;
+            background-size: contain;
+        }
+
+        .footer_list {
+            width: 100%;
+            background-color: #C37165;
+            margin-top: -4px;
+        }
+
+        .footer_list ul {
+            display: flex;
+            width: 100%;
+        }
+
+        .footer_list ul li {
+            width: 25%;
+        }
+
+        .about,
+        .news {
+            height: 260px;
+            color: #fff;
+            padding-top: 10px;
+            margin-left: 10px;
+        }
+
+        .about p,
+        .news p,
+        .words p {
+            width: 90%;
+            margin-top: 10px;
+            text-indent: 2rem;
+            letter-spacing: 2px;
+            line-height: 20px;
+        }
+
+        .viedo,
+        .words {
+            padding-top: 10px;
+            height: 260px;
+            color: #fff
+        }
+
+        .viedo img {
+            width: 90%;
+            height: 90%;
+            margin-left: 10px;
+        }
+
+        .words img {
+            width: 90%;
+            height: 70%;
+            margin-left: 10px;
+        }
+
+        @media screen and(min-width:1200px) {
+            html {
+                font-size: 0.9rem;
+            }
+
+            .footer_list ul li {
+                width: 25%;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 960px) {
+            html {
+                font-size: 0.8rem;
+            }
+            .footer_list ul {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .footer_list ul li {
+                width: 48%;
+            }
+            .footer_list ul li:first-child {
+                content: '';
+                border-bottom: 1px solid #fff;
+            }
+            .footer_list ul li:nth-of-type(2) {
+                content: '';
+                border-bottom: 1px solid #fff;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            html {
+                font-size: 0.5rem;
+            }
+            .nav ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .nav ul li {
+                width: 100%;
+                height: 100px;
+                border: 1px solid #fff;
+            }
+            .footer_list ul {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .footer_list ul li {
+                width: 99%;
+            }
+              .footer_list ul li:nth-of-type(2) {
+                content: '';
+                border-bottom: 1px solid #fff;
+            }
+            .footer_list ul li:nth-of-type(3) {
+                content: '';
+                border-bottom: 1px solid #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li class="item item1"><a href="#">首页</a></li>
+                <li class="item item2"><a href="#">关于我们</a></li>
+                <li class="item item3"><a href="#">新闻中心</a></li>
+                <li class="item item4"><a href="#">产品中心</a></li>
+                <li class="item item5"><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="bg">
+            <img src="images/banner.jpg" alt="">
+        </div>
+        <div class="footer_list">
+            <ul>
+                <li class="about">
+                    <h5>关于我们</h5>
+                    <p>传习教育信息有限公司成立于2003年，是在中科院计算所网络研究室的基础上组建和发展起来的， 由中科院一批资深专家共同发起创建的高新技术企业，主营包括:软件开发、服务外包和教育培训等三大业务，致力于为客户提供全方位的信息化服务，公司自成立以来，涉猎多个兴业且涵盖行业中多个类型的项目，奠定了见识发平台...更多>>
+                    </p>
+                </li>
+                <li class="viedo">
+                    <img src="images/pica.png">
+                </li>
+                <li class="news">
+                    <h5>新闻中心</h5>
+                    <p>日称美要中国停止向朝向出口石油被指乌克兰绕过饿开通赴中国新丝路列车缓中国斥巨资好购德国机械制造企业造美城中国自太空计划主要木便是月球造美对伊朗资导弹项目实施新制裁目实习总此时资方中东谈的不止是经济目实普京执政资16年不能成为中国也该成为阿联
+                    </p>
+                </li>
+                <li class="words">
+                    <img src="images/pic.jpg" alt="">
+                    <p>服务外包和教育培训等三大业务，致力于为客户提供全方位的信息化服务...更多</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
